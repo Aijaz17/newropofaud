@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="audio.css"> -->
+    <link rel="stylesheet" href="./icons/all.min.css">
+    <link rel="stylesheet" href="./icons/fontawesome.min.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .search {
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .search input {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .audio-sec {
+            padding: 10px 5%;
+            margin-bottom: 100px;
+        }
+
+        .audio-sec .surahs {
+            box-shadow: rgba(31, 4, 230, 0.2) 0px 2px 8px 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            transition: all .3s ease-in;
+            cursor: pointer;
+          
+        }
+
+
+        .audio-sec .audio-flex {
+            /* display: flex; */
+            /* justify-content: flex-end; */
+            /* align-items: center; */
+            position: relative;
+        }
+
+        .Siconss {
+            position: absolute;
+            top: 20px;
+            right: -250px;
+        }
+
+        .Siconss i {
+            padding: 0px 10px;
+        }
+
+        @media (max-width:1118px) {
+            .Siconss {
+                position: absolute;
+                top: 20px;
+                right: -220px;
+            }
+
+        }
+
+        @media (max-width:992px) {
+            .Siconss {
+                position: absolute;
+                top: 20px;
+                right: -180px;
+            }
+
+        }
+
+        @media (max-width:800px) {
+            .Siconss {
+                position: absolute;
+                top: 20px;
+                right: -150px;
+            }
+
+        }
+
+        @media (max-width:680px) {
+            .Siconss {
+                position: absolute;
+                top: 20px;
+                right: -120px;
+            }
+
+        }
+
+        @media (max-width:620px) {
+            .audio-sec .surahs {
+
+                grid-template-columns: 1fr;
+            }
+
+            .Siconss {
+                position: absolute;
+                top: 20px;
+                right: 0px;
+
+            }
+        }
+
+
+        .player
+        {
+            position: fixed;
+            bottom: 0px;
+            /* background-color: rgb(38, 92, 193); */
+            width: 100%;
+        }
+        .buttons
+        {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+          
+        }
+        .buttons .icon
+        {
+            margin: 0px 30px;
+        }
+
+        .player  .quranPlayer
+        {
+            text-align: center;
+            width: 100%;
+        }
+        .player .title
+        {
+            text-align: center;
+            font-size: 25px;
+            width: 30%;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: aliceblue;
+        }
+        .buttons .icon
+        {
+            font-size: 30px;
+            color: green;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div class="search">
+        <input type="text" placeholder="Search Here">
+    </div>
+
+
+    <section class="audio-sec">
+
+        <div class="surahs">
+            
+            <!-- <div class="audio-flex">
+
+                <div class="audio-name">
+                    <h3>1.Al-Fatihah</h3>
+                    <img src="sureh-fatiha.png" alt="" class="image">
+                    </h3>
+                </div>
+
+            </div>  -->
+
+        </div>
+
+
+    </section>
+
+
+
+    <div class="player">
+        <div class="title" id="title">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</div>
+        <audio src="" class="quranPlayer" controls autoplay></audio>
+        <div class="buttons">
+            <div class="icon previous"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="icon next"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+    </div>
+
+
+    <script src="js/audio.js"></script>
+
+
+</body>
+
+</html>

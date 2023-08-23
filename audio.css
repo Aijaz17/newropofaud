@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.audio-icon .icon i {
+    font-size: 20px;
+    padding: 15px 18px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    color: rgb(65, 63, 63);
+    margin-right: 8px;
+
+}
+
+.audio-name .image {
+    width: 50px;
+    padding-left: 15px;
+}
+
+.icon2 i {
+    font-size: 20px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.audio-flex {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    padding: 20px 0;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.audio-sec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 20px;
+    
+    width: 90%;
+    margin: auto;
+    
+
+}
+
+.search{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+.search input{
+    width: 100%;
+    padding: 10px ;
+}
